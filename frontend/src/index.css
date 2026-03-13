@@ -248,7 +248,13 @@ code {
   border: 1px solid var(--border);
   border-radius: 8px;
   font: inherit;
-  background: transparent;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+/* Ensure native dropdown list is readable in dark mode */
+.field select option {
+  background: var(--bg);
   color: var(--text-h);
 }
 
